@@ -2,7 +2,7 @@ package advance1.day1.assignment5;
 
 public class Bank  {
 
-    private static int customerID=1;
+    public static int customerID=1;
     private String fullName,emailID,DOB;
     private char gender,mStatus;
 
