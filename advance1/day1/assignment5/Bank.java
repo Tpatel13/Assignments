@@ -9,7 +9,8 @@ public class Bank  {
 
     Bank()
     {
-      customerID++;
+
+        customerID++;
     }
 
     public Bank(String fullName, String emailID, String DOB, char gender, char mStatus) {

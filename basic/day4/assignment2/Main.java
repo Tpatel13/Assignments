@@ -7,6 +7,7 @@ public class Main {
 
 
         //Note taking user input from Argumants
+
         String status="Dayscholar";
         Student s;
 

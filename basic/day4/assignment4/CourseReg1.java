@@ -18,10 +18,7 @@ class Student {
     protected String studentName;
     protected int semesterFees;
     protected int feesPerMonth;
-    Student()
-    {
 
-    }
 
     Student(int studentId) {
         this.studentId = studentId;
@@ -29,13 +26,13 @@ class Student {
 
     Student(int studentId, char studentType, String studName, int semFees) {
         this(studentId);
-        studentType = studentType;
+        this.studentType = studentType;
         studentName = studName;
         semesterFees = semFees;
     }
 
     void displayDetails() {
-        System.out.println("Student id :: "+studentId+":: Student type ::"+semesterFees+"::Student Name "+studentName+"Student Fees Sem::"+semesterFees+"::Student Fees per month ::"+feesPerMonth);
+        System.out.println("Student id :: " + studentId + ":: Student type ::" + semesterFees + "::Student Name " + studentName + "Student Fees Sem::" + semesterFees + "::Student Fees per month ::" + feesPerMonth);
 
     }
 
@@ -46,15 +43,16 @@ class DayScholar extends Student {
     private String residentialAddress;
 
     DayScholar(int studentId, char studentType, String studName, int semFees, String residentialAddress) {
-        super(studentId,studentType,studName,semFees);
+        super(studentId, studentType, studName, semFees);
         this.residentialAddress = residentialAddress;
 
 
     }
+
     @Override
     void displayDetails() {
         super.displayDetails();
-        System.out.println("Student Address ::"+residentialAddress);
+        System.out.println("Student Address ::" + residentialAddress);
     }
 
 }

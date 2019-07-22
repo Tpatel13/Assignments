@@ -10,6 +10,7 @@ public class Assignment3 {
 		char grade='b';
 		
 		Scanner in = new Scanner(System.in);
+
 		
 		char marks=in.next().charAt(0);
 		 

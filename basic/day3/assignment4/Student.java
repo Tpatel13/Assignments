@@ -5,13 +5,6 @@ public class Student {
     private char studentType;
     private String studentName;
 
-    public String getStudentName() {
-        return studentName;
-    }
-
-    public void setStudentName(String studentName) {
-        this.studentName = studentName;
-    }
 
     Student() {
         this.studentID = 10;
@@ -22,6 +15,13 @@ public class Student {
          this.studentID=id;
          this.studentType=type;
          this.studentName=fName+lName;
+    }
+    public String getStudentName() {
+        return studentName;
+    }
+
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
     }
 
     public int getStudentID() {
@@ -43,7 +43,7 @@ public class Student {
     public void setStudentName(String firstName, String lastName) {
         studentName = firstName + lastName;
     }
-  public void getStudentInfo()
+    public void getStudentInfo()
   {
       System.out.println("ID"+studentID+" Type "+studentType+"Full Name "+studentName);
   }

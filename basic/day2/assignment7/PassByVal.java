@@ -5,13 +5,27 @@ public class PassByVal {
 	public static void main(String args[]) {
 		int sId = 25;
 		PassByVal val = new PassByVal();
-		System.out.println(sId);
-		val.passTheValueMethod(sId);
-		System.out.println("The sId are" + sId);
+		Student s1=new Student();
+
+		val.passTheValueMethod(s1);
+
+		val.passTheValueMethod(s1,25);
+
+
+		System.out.println(s1.getStudentID());
+
+
+
+
 	}
 
-	public void passTheValueMethod(int sId) {
-		sId = 10;
-		System.out.println("The sId are" + sId);
+	public void passTheValueMethod(Student s) {
+		s.setStudentID(20);
+
+		System.out.println("The sId are" + s.getStudentID());
+	}
+	public void passTheValueMethod(Student s,int sID) {
+         s.setStudentID(sID);
+		System.out.println("The sId are" + s.getStudentID());
 	}
 }

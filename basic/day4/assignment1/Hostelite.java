@@ -10,8 +10,7 @@ public class Hostelite extends Student {
     }
 
     public Hostelite(int id, char type, String name, double fees, String hostelName, int roomNumber) {
-        this.studentId=id;
-
+       super(id,type,name,fees);
         this.hostelName = hostelName;
         this.roomNumber = roomNumber;
     }

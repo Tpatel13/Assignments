@@ -9,6 +9,7 @@ public class PostGradStudent extends Student{
 
     }
 
+
     public int getPostCourseID() {
         return PostCourseID;
     }

@@ -36,7 +36,7 @@ class Student3 extends CourseReg3 {
 
     Student3(int studentId, char studentType, String studName, int semFees, String cName) {
         super(cName);
-        this.studentId=studentId;
+        this.studentId = studentId;
         this.studentType = studentType;
         studentName = studName;
         semesterFees = semFees;
@@ -45,7 +45,7 @@ class Student3 extends CourseReg3 {
     @Override
     public void displayDetails1() {
         super.displayDetails1();
-        System.out.println("Student id,fees,Name,type"+studentId+"::"+semesterFees+"::"+studentName+"::"+studentType+"::");
+        System.out.println("Student id,fees,Name,type" + studentId + "::" + semesterFees + "::" + studentName + "::" + studentType + "::");
     }
 }
 
@@ -54,7 +54,7 @@ class DayScholar1 extends Student3 {
     private String residentialAddress;
 
     DayScholar1(int studentId, char studentType, String studName,
-               int semFees, String residentialAddress, String cName) {
+                int semFees, String residentialAddress, String cName) {
         super(studentId, studentType, studName, semFees, cName);
         this.residentialAddress = residentialAddress;
     }
@@ -64,7 +64,7 @@ class DayScholar1 extends Student3 {
 //need to display the Details of the Student and
 //DayScholar
         super.displayDetails1();
-        System.out.println("::Resident Address::"+residentialAddress);
+        System.out.println("::Resident Address::" + residentialAddress);
 
     }
 

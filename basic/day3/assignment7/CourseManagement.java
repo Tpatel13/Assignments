@@ -1,35 +1,27 @@
 package basic.day3.assignment7;
 
 
-
-
 public class CourseManagement {
-	public static void main(String args[]) {
-     int studentID=Integer.parseInt(args[0]);
-     String studentName=args[1],status=args[2];
-     long fees=Integer.parseInt(args[3]);
-     Student student= new Student();
+    public static void main(String args[]) {
+        int studentID = Integer.parseInt(args[0]);
+        String studentName = args[1], status = args[2];
+        long fees = Integer.parseInt(args[3]);
+        Student student = new Student();
 
-     if(status.equals("hostile"))
-     {
+        if (status.equals("hostile")) {
 
-         student.setFees(fees);
-         student.setResientialStatus(status);
-         student.setStudentID(studentID);
-         student.setStudentName(studentName);
-         System.out.println("Student id"+student.getStudentID()+" Student Name "+student.getStudentName()+"Student Status and Fees "+student.getResientialStatus()+" "+student.getFees());
-
+            student.setFees(fees);
+            student.setResientialStatus(status);
+            student.setStudentID(studentID);
+            student.setStudentName(studentName);
+            System.out.println("Student id" + student.getStudentID() + " Student Name " + student.getStudentName() + "Student Status and Fees " + student.getResientialStatus() + " " + student.getFees());
 
 
-     }
-     else
-         System.out.println("It is only availabe for hostile studnets");
+        } else
+            System.out.println("It is only availabe for hostile studnets");
 
 
-	}
-
-
-
+    }
 
 
 }
@@ -43,10 +35,10 @@ class Student {
     private String studentName;
     private String resientialStatus;
     private double feesPerMonth;
-    Student(){
+
+    Student() {
 
     }
-
 
 
     public static int getStudentCounter() {
@@ -88,10 +80,6 @@ class Student {
     public void setFees(long fees) {
         this.feesPerMonth = fees;
     }
-
-
-
-
 
 
 }

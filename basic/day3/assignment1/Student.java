@@ -3,7 +3,7 @@ package basic.day3.assignment1;
 public class Student {
    private static int studentID=550;
    private static int studentCount;
-    static{studentCount=10;}
+   static{studentCount=10;}
    private char studentType;
    private String studentName;
    
