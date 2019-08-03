@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Infy Bank</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: brown;
+        }
+
+        h2 {
+            text-align: center;
+            color: brown;
+            font-size: medium;
+        }
+
+        form {
+            border: #ff1700;
+            border-style: dotted;
+            width: 500px;
+
+        }
+input{
+    color: #ff1700;
+}
+        button{
+            color: #ff1700;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1>
+        Infy Bank
+    </h1>
+    <h2>
+        Fund Transfer
+    </h2>
+
+
+</div>
+<div align="center">
+    <form>
+        <table width="500px">
+            <tr>
+                <td width="50%">Pay To</td>
+                <td><select name="payto">
+                    <option value="jack">Jack</option>
+                    <option value="jackson">Jackson</option>
+                    <option value="google">Google</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Pay Form(Account no_)</td>
+                <td>
+                    <input type="text" name="accountnumber" value="10000292">
+                </td>
+            </tr>
+            <tr>
+                <td> Amount </td>
+                <td><input type="text" name="amount"></td>
+            </tr>
+            <tr>
+                <Td>TRANSACTION Remark</Td>
+
+                <Td><input type="text" name="remark"></Td>
+            </tr>
+            <tr align="center">
+                <td colspan="2"><button type="submit">Transfer fund</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

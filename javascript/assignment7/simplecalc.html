@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    a=document.getElementById("1").value;
+    b=document.getElementById("2").value;
+    function add() {
+
+        a=document.getElementById("1").value;
+        b=document.getElementById("2").value;
+        document.getElementById("4").value = parseInt(a)+parseInt(b);
+
+    }
+    function sub() {
+        a=document.getElementById("1").value;
+        b=document.getElementById("2").value;
+        document.getElementById("4").value = parseInt(a)-parseInt(b);
+
+    }
+    function multi() {
+        a=document.getElementById("1").value;
+        b=document.getElementById("2").value;
+        document.getElementById("4").value = parseInt(a)*parseInt(b);
+
+    }
+    function divide() {
+        a=document.getElementById("1").value;
+        b=document.getElementById("2").value;
+        document.getElementById("4").value = parseInt(a)/parseInt(b);
+
+    }
+</script>
+
+Num1<input type="text" name="input1" id="1"><br>
+Num2<input type="text" name="input2" id="2">
+Result<input type="text" name="ans" id="4" value="">
+
+<input type="submit" value="Add" id="6" onclick="add()">
+
+<input type="submit" value="Sub" id="5" onclick="sub()">
+
+<input type="submit" value="Multi" id="7" onclick="multi()">
+<input type="submit" value="Divide" id="8" onclick="divide()">
+
+
+</body>
+
+</html>

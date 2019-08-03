@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Apply form</title>
+</head>
+<body bgcolor="#00ffff">
+<div style="text-align: center"><h2>Apply Form</h2>
+    <form>
+        <table border="2" width="100%">
+            <tr>
+                <td>Name</td>
+
+                <td align="left"><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Sex</td>
+                <td align="left">
+                    <input type="radio" name="sex" value="male">Male
+                    <input type="radio" name="sex" value="female">Female
+                </td>
+            </tr>
+            <tr>
+                <td>Interested In</td>
+                <tD align="left">
+                    <input checked type="checkbox" name="CurrentAccount" value="currentAccount">Current Account
+                    <input type="checkbox" name="debitCard" value="currentAccount">Dabit Card
+                    <input type="checkbox" name="credit" value="currentAccount">CreditCard
+                    <input type="checkbox" name="dematAccount" value="currentAccount">Demat Account
+                    <input type="checkbox" name="InsurancePlance" value="currentAccount">Insurance Plance
+                </tD>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td align="left"><input type="email"></td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td align="left">
+                    <select name="date">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+
+                    <select name="month">
+                        <option value="1">Jan</option>
+                        <option value="2">Feb</option>
+                        <option value="3">March</option>
+                        <option value="4">Apr</option>
+                        <option value="5">May</option>
+                        <option value="6">Jun</option>
+                    </select>
+
+                    <select name="year">
+                        <option value="1">1995</option>
+                        <option value="2">1996</option>
+                        <option value="3">1996</option>
+                        <option value="4">1997</option>
+                        <option value="5">1998</option>
+                        <option value="6">1999</option>
+                    </select>
+                </td>
+
+            </tr>
+            <tr align="left">
+                <td>Attach ID Proof</td>
+                <td><input type="file"></td>
+            </tr>
+            <tr>
+                <td>Comments</td>
+                <td align="left">
+                    <textarea>Enter your comments</textarea>
+                </td>
+            </tr>
+            <tr><td><input type="hidden"></td></tr>
+        </table>
+        <input type="submit">
+        <input type="reset">
+    </form>
+
+</div>
+</body>
+</html>

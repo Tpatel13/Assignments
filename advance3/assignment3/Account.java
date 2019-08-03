@@ -1,12 +1,36 @@
-package advance1.day3.assignment26;
+package advance3.assignment3;
 
-public abstract class Account {
+
+
+public  class Account {
     private int accountNo;
     private Customer customer;
     protected double balance;
 
-    Account() {
+
+    Account(){
+
     }
+    public int getAccountNo() {
+        return accountNo;
+    }
+
+    public void setAccountNo(int accountNo) {
+        this.accountNo = accountNo;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
 
     public Account(int accountNo, Customer customer, double balance) {
         this.accountNo = accountNo;
@@ -29,5 +53,5 @@ public abstract class Account {
     }
 
 
-    public abstract void withDraw(double amount) throws InsufficientBalanceExcpetion;
+   // public  void withDraw(double amount) throws InsufficientBalanceExcpetion;
 }

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function funDisplay(){
+            alert("textbox val is "+document.frm1.txt1.value)
+
+            alert("textbox val is "+document.frm1.radi1.value)
+
+            alert("textbox val is "+document.frm1.but1.value)
+        }
+    </script>
+</head>
+<body>
+<form name="frm1">
+    <input type="text" name="txt1" value="imcs"><br>
+    <input type="radio" name="radi1" value="1" checked>OK<br>
+    <input type="button" value="Submit" name="but1" onclick="funDisplay()">
+
+</form>
+
+</body>
+</html>

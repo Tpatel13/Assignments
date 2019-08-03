@@ -1,0 +1,25 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th {
+    align-content: center;
+    color: #ff1700;
+}
+
+thead {
+    background: pink;
+}
+
+.greenTd {
+    background: olive;
+}
+
+.blueTd {
+    background: burlywood;
+}

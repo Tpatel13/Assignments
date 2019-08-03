@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function average() {
+total=0
+        for(i=0;i<arguments.length;i++){
+            total=total+arguments[i];
+        }
+
+        return total/arguments.length
+    }
+
+    console.log("Avg of 5,10,15 is "+average(5,10,15))
+
+    document.write("<h2>Avg of 100,200 is "+average(100,200))
+</script>
+</body>
+</html>

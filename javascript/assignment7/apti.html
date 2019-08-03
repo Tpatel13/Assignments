@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Radio button</title>
+</head>
+<body bgcolor="#ffe4c4">
+<h2 align="center">QUESTIONS</h2>
+<h3 align="center"> What is the minimum balance for the salary account in infy bank</h3>
+
+<div align="center">
+<input type="radio" name="ans" value="1000" checked> 1000
+<input type="radio" name="ans" value="100"> 100
+
+<input type="radio" name="ans" value="0"> 0
+<input type="radio" name="ans" value="not"> Not Specified<br>
+
+<button type="submit" onclick="checkAns()">SUBMIT</button>
+</div>
+<script>
+    function checkAns() {
+        var radios = document.getElementsByName("ans")
+        for (var i = 0, length = radios.length; i < length; i++) {
+            if (radios[i].checked && radios[i].value == "1000") {
+                // do whatever you want with the checked radio
+                alert(radios[i].value + " Is correct value");
+
+                // only one radio can be logically checked, don't check the rest
+                break;
+            }
+        }
+
+    }
+</script>
+
+</body>
+</html>

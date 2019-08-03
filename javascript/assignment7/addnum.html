@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function add() {
+        a=document.getElementById("1").value;
+        b=document.getElementById("2").value;
+
+        document.getElementById("4").value = parseInt(a)+parseInt(b);
+
+    }
+</script>
+
+Num1<input type="text" name="input1" id="1"><br>
+Num2<input type="text" name="input2" id="2">
+Result<input type="text" name="ans" id="4" value="">
+
+<input type="submit" value="Add" id="3" onclick="add()">
+
+</body>
+
+</html>

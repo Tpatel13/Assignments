@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function disp() {
+        ind = document.f1.webs.selectedIndex;
+        alert("the value is \n" + document.f1.webs.options[ind].value)
+
+        alert("the value is \n" + document.f1.webs.options[ind].text)
+        window.location.replace("http://google.com")
+    }
+</script>
+<form name="f1">
+
+    <select name="webs" onchange="disp()">
+        <option value="1">Http://sparsh</option>
+        <option value="2">Http://kshop</option>
+        <option value="3">Http://172.21.20.155</option>
+        <option value="4">Http://enr.ad.imcs.com</option>
+
+
+    </select>
+</form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check text area</title>
+    <script>
+        function checkchar() {
+             charnum=document.getElementById("myarea").value;
+
+if(charnum.length>200){
+    document.getElementById("myarea").value=""
+    alert("Enter less then 200 only")
+
+}
+        }
+    </script>
+</head>
+<body>
+<div align="center">
+
+    <textarea onChange="checkchar()" id="myarea" name="text" placeholder="Enter less then 200"></textarea>
+</div>
+
+</body>
+</html>
